@@ -1,3 +1,6 @@
+<img src="https://socialify.git.ci/juniorSarh/Task8-1-ui-challenge/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Task8-1-ui-challenge" width="640" height="320" />
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
