@@ -6,7 +6,11 @@ export default function MainDiv() {
       className="main-div"
       style={{ width: "100%", height: "60%", backgroundColor: "#e0e0e0" }}
     >
-      <div className="box1">First scction</div>
+      <div className="box1">
+        <div className="content"></div>
+        <div className="content-img"></div>
+    
+      </div>
       <div className="box2">Second section</div>
       <div className="box3">Third section</div>
       {/* <div className="box">4</div>
