@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="src/Images/logo.svg"></img>
+        <img src="src/assets/Images/logo.svg"></img>
       </div>
       <ul className="navbar-links">
         <li>

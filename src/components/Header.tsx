@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import bgPatternIntro from '../assets/Images/bg-pattern-intro-desktop.svg';
 
 
+
 export default function Header() {
 
 //  const backgroundStyle = {
@@ -15,8 +16,8 @@ export default function Header() {
 
 return (
   <div className="header">
+    
     <Navbar />
-    <h1>Header</h1>
   </div>
 );
 }

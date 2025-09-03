@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
-html,body, #root{
-  height: 100%;
-  width: 100%;
-  border: 1px solid black;
-  /* background-color: #36aa32; */
+html { height: auto; }
+
+body {
+  min-height: 100vh;      
+  margin: 0;
+  display: flex;           
+  flex-direction: column;
+  border: 5px solid black; /* if you want the page border */
 }
 
 /* Header */
-.header{
-background-color: brown;
-width: '100%';
-height: '20%' ;
+.header {
+  background-color: brown;
+  width: 100%;
+  padding: 16px 24px;
+  border-bottom-left-radius: 50px;
 }
 
 /* NavBar */
@@ -25,6 +29,7 @@ height: '20%' ;
   align-items: center;
   padding: 12px 24px;
   color: white;
+  margin: 50px;
 }
 
 .navbar-logo {
@@ -53,12 +58,10 @@ height: '20%' ;
 
 /* main div */
 .main-div {
+  flex: 1;                 /* takes remaining space */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 60%;
-  width: 100%;
 }
 
 /* main div box */
@@ -66,7 +69,6 @@ height: '20%' ;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(228, 227, 224);
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -78,11 +80,13 @@ height: '20%' ;
 .sec1content {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
-  justify-content: flex-start;
+  align-items:center;
+  justify-content: center;
   height: 100%;
   width: 60%;
-  border: 1px solid black;
+  margin: 50px;
+  padding: 20px;
+  /* border: 1px solid black; */
 }
 
 .content-img {
@@ -98,11 +102,12 @@ height: '20%' ;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(190, 187, 181);
+  background: rgb(47, 58, 99);
   color: white;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 8px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
   height: 100%;
   width: 100%;
 }
@@ -130,8 +135,7 @@ height: '20%' ;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(105, 128, 160);
-  color: white;
+  color: rgb(21, 36, 68);
   font-size: 20px;
   font-weight: bold;
   border-radius: 8px;
@@ -145,6 +149,7 @@ height: '20%' ;
   align-items:flex-start;
   justify-content: flex-start;
   height: 100%;
+  margin: 50px;
   width: 60%;
   border: 1px solid black;
 }
@@ -159,8 +164,8 @@ height: '20%' ;
 }
 
 /* footer */
-.footer{
-  width: "100%"; 
-  height: "20%"; 
-  background-color: "#0b041fff";
+.footer {
+  width: 100%;
+  background-color: #0b041f;
+  padding: 16px 24px;
 }
