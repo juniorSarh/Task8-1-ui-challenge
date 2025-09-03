@@ -22,11 +22,11 @@ export default function Navbar() {
         </li>
       </ul>
       <div className="navBtn">
-      <Button backgroundColor="brown" textColor="white" size="medium">
+      <Button backgroundColor="#f57c64" textColor="white" size="medium">
         Login
       </Button>
 
-      <Button backgroundColor="white" textColor="brown" size="medium" >
+      <Button backgroundColor="white" textColor="#f57c64" size="medium" >
         Sign Up
       </Button>
       </div>

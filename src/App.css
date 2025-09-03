@@ -17,7 +17,10 @@ body {
 
 /* Header */
 .header {
-  background-color: brown;
+  background-color: #f57c64;
+  background-image:url("../src/assets/Images/bg-pattern-intro-desktop.svg");
+  background-size: cover;
+  background-position: center;
   width: 100%;
   padding: 16px 24px;
   border-bottom-left-radius: 50px;
@@ -135,18 +138,21 @@ display: flex;
   flex-direction: column;
   align-items:flex-start;
   justify-content: flex-start;
+  margin: 50px;
+  padding: 20px;
   height: 100%;
   width: 50%;
-  border: 1px solid black;
+ 
 }
 
 .sec2img {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: 'visible';
   height: 100%;
   width: 50%;
-  border: 1px solid black;
+
 }
 
 .box3 {
@@ -173,8 +179,8 @@ display: flex;
 
 .sec3img {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-start;
+  justify-content: flex-start;
   height: 100%;
   width: 40%;
 

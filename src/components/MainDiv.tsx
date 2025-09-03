@@ -3,6 +3,7 @@ import Heading from './Heading';
 import desktop from '../assets/Images/illustration-laptop-desktop.svg';
 import editorDesktop from '../assets/Images/illustration-editor-desktop.svg';
 import phones from '../assets/Images/illustration-phones.svg'
+import SecDivParagraph from './SecDivParagraph';
 
 
 export default function MainDiv() {
@@ -31,11 +32,20 @@ export default function MainDiv() {
         <div className="sec2img">
           <img
             src={phones}
-            alt="Desktop image"
-            style={{ backgroundSize: "cover", height: "100%", width: "100%" }}
+            alt="smartphone image"
+            style={{ 
+              backgroundSize: "cover", 
+              height: "100%", 
+              width: "100%" ,
+            }}
           />
         </div>
-        <div className="sec2content"></div>
+        <div className="sec2content">
+          <SecDivParagraph
+            title='State of Art Infrastructure'
+            paragraph='Aenean vestibulum ante tellus, vitae placerat quam pretium eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pulvinar mauris eget risus tincidunt, id viverra elit tempor. Aenean faucibus a mi quis volutpat'
+            />
+        </div>
       </div>
       <div className="box3">
         <div className="sec3img">
