@@ -12,6 +12,7 @@ body {
   display: flex;           
   flex-direction: column;
   border: 5px solid black; /* if you want the page border */
+  background-color: whitesmoke;
 }
 
 /* Header */
@@ -21,7 +22,20 @@ body {
   padding: 16px 24px;
   border-bottom-left-radius: 50px;
 }
-
+.headerBottum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+}
+.headerBtn{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+}
 /* NavBar */
 .navbar {
   display: flex;
@@ -55,6 +69,11 @@ body {
   color: rgb(5, 3, 34);
 }
 
+.navBtn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
 
 /* main div */
 .main-div {
@@ -95,7 +114,6 @@ body {
   justify-content: center;
   height: 100%;
   width: 40%;
-  border: 1px solid black;
 }
 
 .box2 {
@@ -151,7 +169,6 @@ body {
   height: 100%;
   margin: 50px;
   width: 60%;
-  border: 1px solid black;
 }
 
 .sec3img {
@@ -160,7 +177,7 @@ body {
   justify-content: center;
   height: 100%;
   width: 40%;
-  border: 1px solid black;
+
 }
 
 /* footer */
