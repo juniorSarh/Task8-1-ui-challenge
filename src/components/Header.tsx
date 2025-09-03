@@ -1,14 +1,22 @@
-import React from 'react'
+
 import Navbar from './Navbar'
+import bgPatternIntro from '../assets/Images/bg-pattern-intro-desktop.svg';
+
 
 export default function Header() {
-  return (
-    
-      <div style={{ width: "100%", height: "20%", backgroundImage: "src/Images/bg-pattern-intro-desktop.svg" }}
-      >
-        <Navbar/>
-        <h1>Header</h1> 
-    
-    </div>
-  );
+
+//  const backgroundStyle = {
+//   backgroundImage: `url(${bgPatternIntro})`,
+//   // backgroundSize: 'cover',
+//   // backgroundRepeat: 'no-repeat',
+//   // width: '100%',
+//   // height: '20%' 
+// };
+
+return (
+  <div className="header">
+    <Navbar />
+    <h1>Header</h1>
+  </div>
+);
 }
