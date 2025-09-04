@@ -8,11 +8,22 @@ function App() {
   
   return (
     <>
-     <Header/>
-     <MainDiv/>
-     <Footer/>
+      <Header />
+      <h1
+        style={{
+          justifyContent: "center",
+          color: "#2c2f45",
+          padding: "4rem",
+          alignContent: "center",
+          textAlign: "center",
+        }}
+      >
+        Designed For The Future
+      </h1>
+      <MainDiv />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App

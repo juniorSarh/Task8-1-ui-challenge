@@ -24,6 +24,7 @@ body {
   width: 100%;
   padding: 16px 24px;
   border-bottom-left-radius: 50px;
+  
 }
 .headerBottum{
   display: flex;
@@ -95,7 +96,7 @@ display: flex;
   font-size: 20px;
   font-weight: bold;
   border-radius: 8px;
-  height: 100%;
+  height: 50%;
   width: 100%;
 }
 /* box1 content and img */
@@ -120,41 +121,43 @@ display: flex;
 }
 
 .box2 {
+  position: relative;
+  overflow: visible;            /* allow overflow to show */
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: rgb(47, 58, 99);
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 50px;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 1.25rem;
+  background: #2c2f45;         /* your dark shape background */
+  color: #fff;
   height: 100%;
-  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-/* box 2 content and img */
+
+/* Text block */
 .sec2content {
   display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  justify-content: flex-start;
-  margin: 50px;
+  flex-direction: r;
+  align-items:flex-end;
+  justify-content: flex-end;
+  margin: 50;
   padding: 20px;
   height: 100%;
   width: 50%;
- 
 }
 
-/* .sec2img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: 'visible';
-  height: 300%;
-  width: 50%;
-  border: 2px solid red;
 
-} */
+/* Image: start slightly oversized and overflowing */
+.box2__img {
+  position: absolute;
+  left: -12%;
+  top: -20px;
+  width: 125%;
+  max-width: none;
+  height: auto;
+}
+
 
 .box3 {
   display: flex;
@@ -164,7 +167,7 @@ display: flex;
   font-size: 20px;
   font-weight: bold;
   border-radius: 8px;
-  height: 100%;
+  height: 30%;
   width: 100%;
 }
 /* box 3 content and img */
@@ -188,12 +191,121 @@ display: flex;
 }
 
 /* footer */
+
 .footer {
+  background: #1e202a;              
+  color: #e6e7ea;
   width: 100%;
-  background-color: #0b041f;
-  display: 'flex';
-  flex-Direction: 'row';
-  justify-content: 'space-between';
-  align-items: 'flex-start';
-  padding:'50px';
+  border-top-right-radius: 3.5rem;  
+  padding: 3rem 1.25rem;            
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid orange;
 }
+
+/* Inner layout */
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;                
+  justify-content: flex-start;  
+  align-items: flex-start;
+  gap: 4rem;                    
+  flex-wrap: wrap;              
+}
+
+/* Brand */
+.footer__brand img,
+.footer__brand span {
+  display: block;
+  height: 24px;                     /* keep logo tidy */
+  filter: brightness(0) invert(1);  /* ensure white if your svg has color */
+}
+
+/* Columns */
+.footer__cols {
+  display: flex;
+  gap: 4rem;                    /* spacing between each column */
+}
+
+/* Headings & links */
+.footer__heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list a {
+  display: inline-block;
+  color: #b7bac3;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35rem 0;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.footer__list a:hover,
+.footer__list a:focus {
+  color: #ffffff;
+  transform: translateX(2px);
+  outline: none;
+}
+
+/* Responsive */
+
+@media (min-width: 480px) {
+  .box2__img {
+    left: -10%;
+    top: -28px;
+    width: 130%;
+  }
+}
+
+/* ≥ 640px (sm) */
+@media (min-width: 640px) {
+  .box2 {
+    padding: 3rem 1.5rem;
+  }
+  .box2__img {
+    left: -8%;
+    top: -36px;
+    width: 140%;
+  }
+}
+@media (min-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 220px 1fr; /* logo left, columns right */
+  }
+   .box2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-nav {
+    display: flex;
+  }
+
+  .box2__img {
+    left: -10%;
+    top: -30px;
+    width: 110%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__cols {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .box2__img {
+    left: -12%;
+    top: -40px;
+    width: 125%;
+  }
+}
+

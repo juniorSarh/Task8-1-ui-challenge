@@ -28,26 +28,31 @@ export default function MainDiv() {
           />
         </div>
       </div>
-      <div className="box2">
-        
-          <img
-            src={phones}
-            alt="smartphone image"
-            style={{ 
-              backgroundSize: "contain", 
-              height: "100%", 
-              width: "100%" ,
-              border:'2px solid red',
-            }}
-          />
-        
+      <div
+        className="box2"
+      >
+        <img
+          src={phones}
+          alt="smartphone image"
+          style={{
+            position: "absolute", // take it out of normal flow
+            top: "-100px", // adjust how much it overflows upward
+            left: "10px", // adjust sideways overflow
+            height: "auto",
+            width: "15%", // scale beyond the container
+            maxWidth: "none", // prevent shrinking
+          
+          }}
+        />
+
         <div className="sec2content">
           <SecDivParagraph
-            title='State of Art Infrastructure'
-            paragraph='Aenean vestibulum ante tellus, vitae placerat quam pretium eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pulvinar mauris eget risus tincidunt, id viverra elit tempor. Aenean faucibus a mi quis volutpat'
-            />
+            title="State of Art Infrastructure"
+            paragraph="Aenean vestibulum ante tellus, vitae placerat quam pretium eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pulvinar mauris eget risus tincidunt, id viverra elit tempor. Aenean faucibus a mi quis volutpat"
+          />
         </div>
       </div>
+
       <div className="box3">
         <div className="sec3img">
           <img
