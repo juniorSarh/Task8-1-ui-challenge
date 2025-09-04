@@ -29,17 +29,18 @@ export default function MainDiv() {
         </div>
       </div>
       <div className="box2">
-        <div className="sec2img">
+        
           <img
             src={phones}
             alt="smartphone image"
             style={{ 
-              backgroundSize: "cover", 
+              backgroundSize: "contain", 
               height: "100%", 
               width: "100%" ,
+              border:'2px solid red',
             }}
           />
-        </div>
+        
         <div className="sec2content">
           <SecDivParagraph
             title='State of Art Infrastructure'
