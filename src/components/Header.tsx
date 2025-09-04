@@ -1,6 +1,5 @@
 
 import Navbar from './Navbar'
-import bgPatternIntro from '../assets/Images/bg-pattern-intro-desktop.svg';
 import Button from './Button';
 
 

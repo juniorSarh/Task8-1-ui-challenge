@@ -30,8 +30,8 @@ export default function MainDiv() {
       </div>
       <div
         className="box2"
-      >
-        <img
+      ><div className="box2_media">
+        <img className='box2_img'
           src={phones}
           alt="smartphone image"
           style={{
@@ -44,7 +44,7 @@ export default function MainDiv() {
           
           }}
         />
-
+      </div>
         <div className="sec2content">
           <SecDivParagraph
             title="State of Art Infrastructure"
